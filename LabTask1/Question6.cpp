@@ -9,17 +9,17 @@ int main(int argc, char* argv[]){
 	int index = 0, count;
 	getline(cin, line);
 	while(index < line.size() && !(line[index] >= '0' && line[index] <= '9') && line[index] != '-' && line[index] != '.'){
-        name += line[index];
-        index++;
-    }
-    count = index;
-    while(count < line.size()){
-    	values += line[count];
-    	count++;
+	name += line[index];
+	index++;
 	}
-    while(!name.empty() && (name[name.size() - 1] == ' ')){
-        name.resize(name.size() - 1);
-    }
+	count = index;
+	while(count < line.size()){
+	values += line[count];
+	count++;
+	}
+	while(!name.empty() && (name[name.size() - 1] == ' ')){
+	name.resize(name.size() - 1);
+	}
 	for(int i = 0; i < 5 ; i++){
 		number = "";
 		int numlength = 0;
@@ -38,4 +38,3 @@ int main(int argc, char* argv[]){
 	cout<<"Average: "<<fixed<<setprecision(2)<<average<<endl;
 	return 0;
 }
-
