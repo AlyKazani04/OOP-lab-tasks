@@ -7,7 +7,9 @@ class Book{
 	string author_name;
 	string publisher;
 	public:
-		Book(){};
+		Book(){
+			cout<<"Default constructor called."<<endl;
+		};
 		Book(string bname, string Isbn, string aname, string publishername){
 			book_name = bname;
 			isbn = Isbn;
@@ -35,6 +37,21 @@ class Book{
 };
 
 int main(int argc, char** argv){
-	Book books[5] = { Book("Harry", "ab1234", "Author", "Publisher") , Book("Book2", "ab2345", "Author1", "Publisher1")};
+	
+	//main input implementation
+	/*Book books[5];
+	for(int i = 0; i < 5; i++){
+		books[i] = { Book(argv[i*4+1], argv[i*4+2], argv[i*4+3], argv[i*4+4] ) };  
+	}*/
+	
+	//test default constructor
+	//Book books_empty[5];
+	
+	Book books[5] = { 
+		Book("Harry", "ab1234", "Author", "Publisher"), 
+		Book("Book2", "ab2345", "Author1", "Publisher1")
+		//3 empty spaces = 3 default constructors will be called.
+	};
+	
 	return 0;
 }
