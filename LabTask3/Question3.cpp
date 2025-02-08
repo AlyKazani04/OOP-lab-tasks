@@ -47,7 +47,8 @@ int main(int argc, char** argv){
 				return 0;
 			default:
 				cout<<"\tHuh? You're not supposed to have found this."<<endl;
-				cout<<"\tBye"<<endl;
+				cout<<"\tYou prolly entered ml u wanted to drink instead of 1 or 0."<<endl;
+				cout<<"\tTry Again.\n\tBye"<<endl;
 				return 0;
 		}
 	}
