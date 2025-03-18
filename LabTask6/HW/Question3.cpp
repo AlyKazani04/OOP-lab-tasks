@@ -39,7 +39,7 @@ public:
 	
 	void displayMarks() const {
 		cout<<"\nMarks Obtained:\n";
-		cout<<"OOP: "<<marks_oop<<"\nPF: "<<marks_pf<<"\nDS: "<<marks_ds<<"\nDB: "<<marks_ee<"\n";
+		cout<<"OOP: "<<marks_oop<<"\nPF: "<<marks_pf<<"\nDS: "<<marks_ds<<"\nDB: "<<marks_ee<<"\n";
 	}
 };
 
@@ -50,7 +50,7 @@ private:
 
 public:
 	void calculateResult(){
-		total_marks = marks_oop + marks_pf + marks_ds + marks_db;
+		total_marks = marks_oop + marks_pf + marks_ds + marks_ee;
 		avg_marks = total_marks / 4;
 	}
 	
