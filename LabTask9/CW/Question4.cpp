@@ -109,9 +109,9 @@ void Passenger::requestUpgrade(Flight& flight, const string& newSeatClass){
 
 int main(){
 
-    Flight flight("A123", "NYC", "LAX", 2); // flight number, departure, arrival, capacity = 2 seats
+    Flight flight("A123", "KHI", "TKY", 2); // flight number, departure, arrival, capacity = 2 seats
 
-    Passenger Aly(1, "Alice");
+    Passenger Aly(1, "Aly");
     Passenger Bingus(2, "Bingus");
     Passenger Uni(3, "Uni");
 
